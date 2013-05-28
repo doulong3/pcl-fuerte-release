@@ -1,0 +1,25 @@
+From d2b1b8151175f0959bd0b9b8554cf55c669a4bbf Mon Sep 17 00:00:00 2001
+From: Julius Kammerl <julius@kammerl.de>
+Date: Tue, 28 May 2013 09:37:43 -0700
+Subject: [PATCH] disabling SSE support
+
+---
+ CMakeLists.txt |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/CMakeLists.txt b/CMakeLists.txt
+index 6095e9e..9b98495 100644
+--- a/CMakeLists.txt
++++ b/CMakeLists.txt
+@@ -82,7 +82,7 @@ endif()
+ 
+ # check for SSE flags
+ include(${PCL_SOURCE_DIR}/cmake/pcl_find_sse.cmake)
+-PCL_CHECK_FOR_SSE()
++#PCL_CHECK_FOR_SSE()
+ 
+ if (__COMPILER_PATHSCALE)
+   SET(CMAKE_CXX_FLAGS "${CMAKE_CXX_FLAGS} -Wno-uninitialized -zerouv -pthread -mp")
+-- 
+1.7.9.5
+
