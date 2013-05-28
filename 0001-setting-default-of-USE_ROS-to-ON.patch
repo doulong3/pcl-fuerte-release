@@ -1,7 +1,7 @@
 From 662158a48a8187153cd8bee46693083fdab18f90 Mon Sep 17 00:00:00 2001
 From: Julius Kammerl <julius@kammerl.de>
 Date: Mon, 4 Feb 2013 00:29:14 -0800
-Subject: [PATCH] setting default of USE_ROS to ON
+Subject: [PATCH 1/2] setting default of USE_ROS to ON
 
 ---
  cmake/pcl_find_ros.cmake |    2 +-
