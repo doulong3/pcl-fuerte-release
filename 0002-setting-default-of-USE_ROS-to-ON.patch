@@ -1,0 +1,25 @@
+From 62ac6fa689b2a7db3232498a062bb2a6454b1f91 Mon Sep 17 00:00:00 2001
+From: Julius Kammerl <julius@kammerl.de>
+Date: Mon, 4 Feb 2013 00:29:14 -0800
+Subject: [PATCH 2/2] setting default of USE_ROS to ON
+
+---
+ cmake/pcl_find_ros.cmake |    2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/cmake/pcl_find_ros.cmake b/cmake/pcl_find_ros.cmake
+index 58ab774..5129366 100644
+--- a/cmake/pcl_find_ros.cmake
++++ b/cmake/pcl_find_ros.cmake
+@@ -22,7 +22,7 @@ macro(get_ros_inc_path _dest _pkg)
+     endif()
+ endmacro(get_ros_inc_path)
+ 
+-    option(USE_ROS "Integrate with ROS rather than using native files" OFF)
++    option(USE_ROS "Integrate with ROS rather than using native files" ON)
+     message(STATUS "Found ROS; USE_ROS is ${USE_ROS}")
+     if(USE_ROS)
+         # Search for ROS
+-- 
+1.7.9.5
+

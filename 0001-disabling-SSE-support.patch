@@ -1,7 +1,7 @@
-From ee5902efd81f4e321403a6013ce9dcfdda4d292d Mon Sep 17 00:00:00 2001
+From a3948201e37202ecb6d9a61add529a5310e4fdb4 Mon Sep 17 00:00:00 2001
 From: Julius Kammerl <julius@kammerl.de>
 Date: Tue, 28 May 2013 09:37:43 -0700
-Subject: [PATCH] disabling SSE support
+Subject: [PATCH 1/2] disabling SSE support
 
 ---
  CMakeLists.txt |    2 +-
