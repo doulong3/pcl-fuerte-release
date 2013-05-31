@@ -22,7 +22,7 @@ macro(get_ros_inc_path _dest _pkg)
     endif()
 endmacro(get_ros_inc_path)
 
-    option(USE_ROS "Integrate with ROS rather than using native files" OFF)
+    option(USE_ROS "Integrate with ROS rather than using native files" ON)
     message(STATUS "Found ROS; USE_ROS is ${USE_ROS}")
     if(USE_ROS)
         # Search for ROS
